@@ -4,7 +4,7 @@ import logo from './logo.svg';
 
 export default create({
   base: 'light',
-  brandTitle: 'Homeday',
-  brandUrl: 'https://www.homeday.de',
+  brandTitle: 'DossierData',
+  brandUrl: 'https://dossierdata.nl',
   brandImage: logo,
 });
