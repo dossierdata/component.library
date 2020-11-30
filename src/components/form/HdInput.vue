@@ -36,11 +36,11 @@
 
 <script>
 import merge from 'lodash/merge';
-import { getMessages } from 'homeday-blocks/src/lang';
+import { getMessages } from 'dossierdata-component-library/src/lang';
 import {
   email as validateEmail,
   date as validateDate,
-} from 'homeday-blocks/src/services/formValidation';
+} from 'dossierdata-component-library/src/services/formValidation';
 import TextFieldBase from './TextFieldBase.vue';
 
 export default {

@@ -49,8 +49,8 @@
 </template>
 
 <script>
-import HdIcon from 'homeday-blocks/src/components/HdIcon.vue';
-import { plusCircleIcon, closeIcon } from 'homeday-blocks/src/assets/small-icons';
+import HdIcon from 'dossierdata-component-library/src/components/HdIcon.vue';
+import { plusCircleIcon, closeIcon } from 'dossierdata-component-library/src/assets/small-icons';
 
 export default {
   name: 'HdTagsSelector',
@@ -183,7 +183,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'homeday-blocks/src/styles/mixins.scss';
+@import 'dossierdata-component-library/src/styles/mixins.scss';
 
 .tags-selector {
   position: relative;

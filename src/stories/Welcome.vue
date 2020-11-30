@@ -1,17 +1,17 @@
 <template>
   <div class="welcome">
-    <h1 class="welcome__title">Homeday-Blocks</h1>
+    <h1 class="welcome__title">dossierdata-component-library</h1>
     <p class="welcome__paragraph">A Vue component library built by Homeday's frontend team.</p>
 
     <h3 class="welcome__subtitle">Start using the library in 2 quick steps</h3>
     <p class="welcome__paragraph">
       1- Install the library:
       <vue-code-highlight class="welcome__code">{{
-        "npm install homeday-de/homeday-blocks --save"
+        "npm install homeday-de/dossierdata-component-library --save"
       }}</vue-code-highlight>
       2- Consume the components
       <vue-code-highlight class="welcome__code">{{
-        "import { HdGallery } from 'homeday-blocks';"
+        "import { HdGallery } from 'dossierdata-component-library';"
       }}</vue-code-highlight>
     </p>
 
@@ -23,7 +23,7 @@
       <a class="link" href="https://cli.vuejs.org/config/#transpiledependencies" target="_blank">transpileDependencies</a>
       in the Vue config file:
       <vue-code-highlight class="welcome__code">{{
-        "transpileDependencies: ['homeday-blocks', 'vue-zoomer'],"
+        "transpileDependencies: ['dossierdata-component-library', 'vue-zoomer'],"
       }}</vue-code-highlight>
     </p>
     <h3 class="welcome__subtitle">How to use our storybook?</h3>
@@ -36,7 +36,7 @@
     </p>
     <h3 class="welcome__subtitle">Contributing :)</h3>
     <p class="welcome__paragraph">
-      Check out our <a class="link" href="https://github.com/homeday-de/homeday-blocks" target="_blank">Github repository</a> for more details.</p>
+      Check out our <a class="link" href="https://github.com/homeday-de/dossierdata-component-library" target="_blank">Github repository</a> for more details.</p>
   </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~homeday-blocks/src/styles/mixins.scss';
+@import '~dossierdata-component-library/src/styles/mixins.scss';
 @import "~vue-code-highlight/themes/prism.css";
 
 .welcome {

@@ -33,7 +33,7 @@
 <script>
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { component as VueCodeHighlight } from 'vue-code-highlight';
-import { numberOfLevels } from 'homeday-blocks/src/styles/_elevation.scss';
+import { numberOfLevels } from 'dossierdata-component-library/src/styles/_elevation.scss';
 
 export default {
   name: 'ElevationStory',
@@ -44,7 +44,7 @@ export default {
     return {
       numberOfLevels: Number(numberOfLevels),
       codeExampleClasses: '<div class="elevation-8">My elevated block</div>',
-      codeExampleMixin: `@import '~homeday-blocks/src/styles/mixins.scss';
+      codeExampleMixin: `@import '~dossierdata-component-library/src/styles/mixins.scss';
 
 .my-elevated-block {
   @include elevation(8);
@@ -54,7 +54,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '~homeday-blocks/src/styles/mixins.scss';
+@import '~dossierdata-component-library/src/styles/mixins.scss';
 @import "~vue-code-highlight/themes/prism.css";
 
 .elevation-story {

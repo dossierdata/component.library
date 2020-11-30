@@ -14,7 +14,7 @@ Exposes methods for setting up viewport breakpoints of the project. The breakpoi
 In your project entry file, import the service and define breakpoints that make sense for your project:
 
 ```js
-import { setBreakpoints } from 'homeday-blocks/src/services/breakpoints';
+import { setBreakpoints } from 'dossierdata-component-library/src/services/breakpoints';
 
 const breakpoints = {
   s: '(max-width:599px)',
@@ -29,7 +29,7 @@ You can now import a helper component and render contents based on your breakpoi
 
 ```vue
 <script>
-import { HdResponsive } from 'homeday-blocks';
+import { HdResponsive } from 'dossierdata-component-library';
 </script>
 
 <template>

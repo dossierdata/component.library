@@ -13,7 +13,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import 'homeday-blocks/src/styles/mixins.scss';
+@import 'dossierdata-component-library/src/styles/mixins.scss';
 
 .hd-tooltip {
   position: absolute;

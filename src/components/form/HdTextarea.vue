@@ -33,7 +33,7 @@
 
 <script>
 import merge from 'lodash/merge';
-import { getMessages } from 'homeday-blocks/src/lang';
+import { getMessages } from 'dossierdata-component-library/src/lang';
 import TextFieldBase from './TextFieldBase.vue';
 
 export default {

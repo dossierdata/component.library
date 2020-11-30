@@ -7,7 +7,7 @@ Fork the main repository, clone it to your local machine and add main repo as up
 
 ```
 $ git clone git@github.com:YOUR_USERNAME/component.library.git
-$ cd homeday-blocks
+$ cd dossierdata-component-library
 $ git remote add upstream git@github.com:dossierdata/component.library.git
 ```
 
@@ -83,7 +83,7 @@ Make sure you've `PERCY_TOKEN` exported first and the [project is built](#build)
 npm run test:percy
 ```
 
-You can also follow build statuses in https://percy.io/Homeday/homeday-blocks
+You can also follow build statuses in https://percy.io/Homeday/dossierdata-component-library
 
 #### Gotchas
 - `tests/` is an alias for `<rootDir>/tests/`

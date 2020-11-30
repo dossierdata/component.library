@@ -14,5 +14,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'homeday-blocks/src/styles/mixins.scss';
+@import 'dossierdata-component-library/src/styles/mixins.scss';
 </style>

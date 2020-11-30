@@ -27,17 +27,17 @@
 </template>
 
 <script>
-import HdInput from 'homeday-blocks/src/components/form/HdInput.vue';
-import HdCheckbox from 'homeday-blocks/src/components/form/HdCheckbox.vue';
-import HdRadio from 'homeday-blocks/src/components/form/HdRadio.vue';
-import HdInputPassword from 'homeday-blocks/src/components/form/HdInputPassword.vue';
-import HdPasswordConfirm from 'homeday-blocks/src/components/form/HdPasswordConfirm.vue';
-import HdTextarea from 'homeday-blocks/src/components/form/HdTextarea.vue';
-import HdSelect from 'homeday-blocks/src/components/form/HdSelect.vue';
-import HdTagsSelector from 'homeday-blocks/src/components/form/HdTagsSelector.vue';
-import HdSplitInput from 'homeday-blocks/src/components/form/HdSplitInput.vue';
-import HdGoogleAutocomplete from 'homeday-blocks/src/components/form/HdGoogleAutocomplete.vue';
-import HdButton from 'homeday-blocks/src/components/buttons/HdButton.vue';
+import HdInput from 'dossierdata-component-library/src/components/form/HdInput.vue';
+import HdCheckbox from 'dossierdata-component-library/src/components/form/HdCheckbox.vue';
+import HdRadio from 'dossierdata-component-library/src/components/form/HdRadio.vue';
+import HdInputPassword from 'dossierdata-component-library/src/components/form/HdInputPassword.vue';
+import HdPasswordConfirm from 'dossierdata-component-library/src/components/form/HdPasswordConfirm.vue';
+import HdTextarea from 'dossierdata-component-library/src/components/form/HdTextarea.vue';
+import HdSelect from 'dossierdata-component-library/src/components/form/HdSelect.vue';
+import HdTagsSelector from 'dossierdata-component-library/src/components/form/HdTagsSelector.vue';
+import HdSplitInput from 'dossierdata-component-library/src/components/form/HdSplitInput.vue';
+import HdGoogleAutocomplete from 'dossierdata-component-library/src/components/form/HdGoogleAutocomplete.vue';
+import HdButton from 'dossierdata-component-library/src/components/buttons/HdButton.vue';
 
 export default {
   name: 'HdDynamicForm',
@@ -147,7 +147,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'homeday-blocks/src/styles/mixins.scss';
+@import 'dossierdata-component-library/src/styles/mixins.scss';
 
 .dynamicForm {
   &__line {

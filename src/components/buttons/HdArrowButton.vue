@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import HdIcon from 'homeday-blocks/src/components/HdIcon.vue';
+import HdIcon from 'dossierdata-component-library/src/components/HdIcon.vue';
 import { chevronIcon } from 'homeday-blocks/src/assets/small-icons';
 
 export default {

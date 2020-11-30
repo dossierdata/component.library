@@ -1,12 +1,12 @@
 import {
-  HdButton,
-  HdButtonTypes as TYPES,
-} from 'homeday-blocks';
-import { plusIcon } from 'homeday-blocks/src/assets/small-icons';
+  DDButton,
+  DDButtonTypes as TYPES,
+} from 'dossierdata-component-library';
+import { plusIcon } from 'dossierdata-component-library/src/assets/small-icons';
 
 export default {
-  title: 'Components/HdButton',
-  component: HdButton,
+  title: 'Components/DDButton',
+  component: DDButton,
   argTypes: {
     text: {
       control: 'text',
@@ -43,16 +43,16 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { HdButton },
+  components: { DDButton },
   template: `
     <div>
-      <HdButton
+      <DDButton
         @click="onClick"
         :modifier="modifier"
         :isInDarkBackground="isInDarkBackground"
         :disabled="disabled"
         :iconSrc="icon"
-      >{{ text }}</HdButton>
+      >{{ text }}</DDButton>
       <div :style="style" />
     </div>
       `,

@@ -7,7 +7,7 @@
       v-if="iconSrc"
       class="btn__icon"
     >
-      <HdIcon
+      <DDIcon
         :src="iconSrc"
         width="100%"
         height="100%"
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import HdIcon from 'homeday-blocks/src/components/HdIcon.vue';
+import DDIcon from 'dossierdata-component-library/src/components/basic/DDIcon.vue';
 
 export const TYPES = {
   PRIMARY: 'primary',
@@ -34,9 +34,9 @@ export const TYPES = {
 };
 
 export default {
-  name: 'HdButton',
+  name: 'DDButton',
   components: {
-    HdIcon,
+    DDIcon,
   },
   props: {
     modifier: {
@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'homeday-blocks/src/styles/_variables.scss';
+@import 'dossierdata-component-library/src/styles/_variables.scss';
 
 .btn {
   $root: &;

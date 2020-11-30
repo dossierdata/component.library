@@ -50,8 +50,8 @@
 <script>
 // eslint-disable-next-line import/extensions
 import Flickity from 'vue-flickity';
-import onResize from 'homeday-blocks/src/services/on-resize';
-import HdPager from 'homeday-blocks/src/components/HdPager.vue';
+import onResize from 'dossierdata-component-library/src/services/on-resize';
+import HdPager from 'dossierdata-component-library/src/components/HdPager.vue';
 
 export default {
   name: 'HdGalleryCarousel',

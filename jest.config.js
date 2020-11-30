@@ -27,7 +27,7 @@ module.exports = {
   ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^homeday-blocks/(.*)$': '<rootDir>/$1',
+    '^dossierdata-component-library/(.*)$': '<rootDir>/$1',
     '^tests/(.*)$': '<rootDir>/tests/$1',
   },
   snapshotSerializers: [

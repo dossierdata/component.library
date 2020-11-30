@@ -4,11 +4,11 @@ import {
   bellIcon,
   infoIcon,
   checkCircleIcon,
-} from 'homeday-blocks/src/assets/small-icons';
-import HdIcon from 'homeday-blocks/src/components/HdIcon.vue';
+} from 'dossierdata-component-library/src/assets/small-icons';
+import HdIcon from 'dossierdata-component-library/src/components/HdIcon.vue';
 import HdNotification, { TYPES } from '@/components/notifications/HdNotification.vue';
 
-jest.mock('homeday-blocks/src/assets/small-icons', () => ({
+jest.mock('dossierdata-component-library/src/assets/small-icons', () => ({
   errorIcon: 'errorIcon.svg',
   bellIcon: 'bellIcon.svg',
   infoIcon: 'infoIcon.svg',

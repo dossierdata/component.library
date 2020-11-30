@@ -74,12 +74,12 @@
 </template>
 
 <script>
-import HdGalleryCarousel from 'homeday-blocks/src/components/gallery/HdGalleryCarousel.vue';
-import HdGalleryMedia from 'homeday-blocks/src/components/gallery/HdGalleryMedia.vue';
-import HdGalleryPlaceholder from 'homeday-blocks/src/components/gallery/HdGalleryPlaceholder.vue';
-import HdIcon from 'homeday-blocks/src/components/HdIcon.vue';
-import { chevronIcon } from 'homeday-blocks/src/assets/small-icons';
-import { picturesIcon } from 'homeday-blocks/src/assets/big-icons';
+import HdGalleryCarousel from 'dossierdata-component-library/src/components/gallery/HdGalleryCarousel.vue';
+import HdGalleryMedia from 'dossierdata-component-library/src/components/gallery/HdGalleryMedia.vue';
+import HdGalleryPlaceholder from 'dossierdata-component-library/src/components/gallery/HdGalleryPlaceholder.vue';
+import HdIcon from 'dossierdata-component-library/src/components/HdIcon.vue';
+import { chevronIcon } from 'dossierdata-component-library/src/assets/small-icons';
+import { picturesIcon } from 'dossierdata-component-library/src/assets/big-icons';
 
 export default {
   name: 'HdGallery',
@@ -184,7 +184,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'homeday-blocks/src/styles/mixins.scss';
+@import 'dossierdata-component-library/src/styles/mixins.scss';
 
 .gallery {
   $_root: &;

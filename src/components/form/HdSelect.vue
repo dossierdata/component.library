@@ -42,9 +42,9 @@
 
 <script>
 import merge from 'lodash/merge';
-import { getMessages } from 'homeday-blocks/src/lang';
-import HdIcon from 'homeday-blocks/src/components/HdIcon.vue';
-import { smallArrowIcon } from 'homeday-blocks/src/assets/small-icons';
+import { getMessages } from 'dossierdata-component-library/src/lang';
+import HdIcon from 'dossierdata-component-library/src/components/HdIcon.vue';
+import { smallArrowIcon } from 'dossierdata-component-library/src/assets/small-icons';
 import FieldBase from './FieldBase.vue';
 
 export default {
@@ -149,7 +149,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import 'homeday-blocks/src/styles/mixins.scss';
+@import 'dossierdata-component-library/src/styles/mixins.scss';
 
 .select {
   &__arrow {

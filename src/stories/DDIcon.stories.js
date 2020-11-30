@@ -1,14 +1,14 @@
-import './styles/HdIcon.css';
-import { HdIcon } from 'homeday-blocks';
-import { apartmentFloorIcon as bigIcon } from 'homeday-blocks/src/assets/big-icons';
+import './styles/DDIcon.css';
+import { DDIcon } from 'dossierdata-component-library';
+import { apartmentFloorIcon as bigIcon } from 'dossierdata-component-library/src/assets/big-icons';
 import multiColorIcon from './assets/ic_multi-color.svg';
 import multiColorIconWithClasses from './assets/ic_multi-color--with-classes.svg';
-import classFromFillNote from '../notes/HdIconClassFromFill.md';
-import fillFromClassNote from '../notes/HdIconFillFromClass.md';
+import classFromFillNote from '../notes/DDIconClassFromFill.md';
+import fillFromClassNote from '../notes/DDIconFillFromClass.md';
 
 export default {
-  title: 'Components/HdIcon',
-  component: HdIcon,
+  title: 'Components/DDIcon',
+  component: DDIcon,
   parameters: {
     percy: {
       skip: true,
@@ -26,7 +26,7 @@ export default {
 
 const Template = template => (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { HdIcon },
+  components: { DDIcon },
   template,
 });
 
@@ -34,7 +34,7 @@ export const Default = Template(`
   <div>
     <p>The <b>&lt;svg&gt;</svg></b> element is the root of the component,
       so you can use its native attributes, like <b>width</b> and <b>height</b> in this example:</p>
-    <HdIcon
+    <DDIcon
       :src="src"
       :title="title"
       :id="id"
@@ -43,7 +43,7 @@ export const Default = Template(`
       height="64"
     />
     <br>
-    <HdIcon
+    <DDIcon
       :src="src"
       :title="title"
       :id="id"
@@ -52,7 +52,7 @@ export const Default = Template(`
       height="128"
     />
     <p>or <b>transform</b>:</p>
-    <HdIcon
+    <DDIcon
       :src="src"
       :title="title"
       :id="id"
@@ -62,7 +62,7 @@ export const Default = Template(`
       transform="rotate(90)"
     />
     <br>
-    <HdIcon
+    <DDIcon
       :src="src"
       :title="title"
       :id="id"
@@ -77,7 +77,7 @@ export const Default = Template(`
 export const UsingClassFromFill = Template(`
   <div>
     <p>Check the docs description for implementation details</p>
-    <HdIcon
+    <DDIcon
       :src="src"
       :title="title"
       :id="id"
@@ -106,7 +106,7 @@ UsingClassFromFill.parameters = {
 export const UsingFillFromClass = Template(`
   <div>
     <p>Check the docs description for implementation details</p>
-    <HdIcon
+    <DDIcon
       :src="src"
       :title="title"
       :id="id"

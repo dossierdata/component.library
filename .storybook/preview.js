@@ -1,12 +1,9 @@
-import 'homeday-blocks/src/styles/main.scss';
+import 'dossierdata-component-library/src/styles/main.scss';
 import '@storybook/addon-console';
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { HdTooltipInstaller } from 'homeday-blocks';
-
-HdTooltipInstaller();
+import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: {argTypesRegex: "^on[A-Z].*"},
   options: {
     storySort: {
       method: 'alphabetical',
