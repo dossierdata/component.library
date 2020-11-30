@@ -1,0 +1,107 @@
+{
+  "name": "dossierdata-component-library",
+  "version": "14.1.0",
+  "description": "A Vue component library built by Homeday's frontend team.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dossierdata/component.library.git"
+  },
+  "keywords": [
+    "vue",
+    "javascript",
+    "component library",
+    "storybook",
+    "dossierdata-component-library",
+    "services"
+  ],
+  "bugs": {
+    "url": "https://github.com/dossierdata/component.library/issues"
+  },
+  "homepage": "https://component-library.ddat.dev",
+  "license": "MIT",
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "lint:ci": "vue-cli-service lint --no-fix",
+    "build:lib": "vue-cli-service build --target lib --name dossierdata-component-library ./src/components/index.js",
+    "build:storybook": "build-storybook",
+    "serve:storybook": "start-storybook -p 6006",
+    "test:unit": "vue-cli-service test:unit",
+    "test:unit:snapshot": "vue-cli-service test:unit -u",
+    "test:unit:watch": "npm run test:unit -- --watch",
+    "test:unit:ci": "npm run test:unit -- --ci --coverage",
+    "test:unit:coverage": "npm run test:unit -- --coverage && open coverage/lcov-report/index.html",
+    "test:percy": "if [ $PERCY_TOKEN ]; then percy-storybook; else echo 'Skipping test: PERCY_TOKEN is not defined'; fi",
+    "coverage": "cat ./coverage/lcov.info | coveralls -v",
+    "import-assets": "node src/assets-importer",
+    "new": "hygen new"
+  },
+  "dependencies": {
+    "body-scroll-lock": "2.6.4",
+    "lodash": "4.17.20",
+    "natural-scroll": "0.2.2",
+    "vue": "2.6.12",
+    "vue-flickity": "1.2.1",
+    "vue-inline-svg": "1.3.1"
+  },
+  "devDependencies": {
+    "@percy/storybook": "3.3.1",
+    "@storybook/addon-actions": "6.0.12",
+    "@storybook/addon-console": "1.2.1",
+    "@storybook/addon-essentials": "6.0.21",
+    "@storybook/addon-knobs": "6.0.21",
+    "@storybook/addon-links": "6.0.21",
+    "@storybook/addon-viewport": "6.0.22",
+    "@storybook/theming": "6.0.22",
+    "@storybook/vue": "6.0.26",
+    "@vue/cli-plugin-babel": "4.1.2",
+    "@vue/cli-plugin-eslint": "4.5.6",
+    "@vue/cli-plugin-unit-jest": "4.5.6",
+    "@vue/cli-service": "4.5.6",
+    "@vue/eslint-config-airbnb": "4.0.1",
+    "@vue/test-utils": "1.0.0-beta.33",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "core-js": "3.6.4",
+    "coveralls": "^3.0.7",
+    "deepmerge": "^4.2.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-vue": "5.2.3",
+    "gitmoji-cli": "3.2.12",
+    "husky": "4.3.0",
+    "hygen": "^6.0.4",
+    "lint-staged": "9.5.0",
+    "node-fetch": "^2.6.0",
+    "node-sass": "4.14.1",
+    "raw-loader": "3.1.0",
+    "react-is": "^16.13.1",
+    "sass-loader": "8.0.2",
+    "vue-code-highlight": "^0.7.2",
+    "vue-template-compiler": "2.6.12"
+  },
+  "files": [
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && gitmoji --hook $HUSKY_GIT_PARAMS || true",
+      "pre-push": "npm run test:unit"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
