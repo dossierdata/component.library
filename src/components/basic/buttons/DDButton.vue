@@ -17,7 +17,7 @@
       ref="content"
       class="btn__content"
     >
-      <slot />
+      <slot/>
     </span>
   </button>
 </template>
@@ -103,6 +103,7 @@ export default {
 
 <style lang="scss">
 @import 'dossierdata-component-library/src/styles/_variables.scss';
+@import 'dossierdata-component-library/src/styles/buttons.scss';
 
 .btn {
   $root: &;
