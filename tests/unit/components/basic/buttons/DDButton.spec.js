@@ -1,7 +1,7 @@
 import _merge from 'lodash/merge';
 import { wrapperFactoryBuilder } from 'tests/unit/helpers';
 import InlineSvg from 'vue-inline-svg';
-import HdButton, { TYPES } from '@/components/buttons/HdButton.vue';
+import DDButton, { TYPES } from '@/components/basic/buttons/DDButton.vue';
 
 const ICON_BUTTON_CLASS = 'btn--icon-button';
 const ICON_CONTENT = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="222 126 53 53" width="50" height="50">
@@ -20,7 +20,7 @@ const stubbedInlineSvg = _merge(InlineSvg, {
   },
 });
 
-const wrapperBuilder = wrapperFactoryBuilder(HdButton, {
+const wrapperBuilder = wrapperFactoryBuilder(DDButton, {
   slots: {
     default: '<span>Button text</span>',
   },
@@ -29,7 +29,7 @@ const wrapperBuilder = wrapperFactoryBuilder(HdButton, {
   },
 });
 
-describe('HdButton', () => {
+describe('DDButton', () => {
   it('should render component with `btn` class', () => {
     const wrapper = wrapperBuilder();
 

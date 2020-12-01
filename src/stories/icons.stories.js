@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue';
 import { component as VueCodeHighlight } from 'vue-code-highlight';
-import HdIcon from 'dossierdata-component-library/src/components/HdIcon.vue';
+import DDIcon from 'dossierdata-component-library/src/components/basic/DDIcon.vue';
 import * as smallIcons from 'dossierdata-component-library/src/assets/small-icons';
 import * as bigIcons from 'dossierdata-component-library/src/assets/big-icons';
 import * as bicolorIcons from 'dossierdata-component-library/src/assets/bicolor-icons';
@@ -19,7 +19,7 @@ storiesOf('Assets/Icons', module)
   })
   .add('Small icons', () => ({
     components: {
-      HdIcon,
+      DDIcon,
       VueCodeHighlight,
     },
     data() {
@@ -37,7 +37,7 @@ storiesOf('Assets/Icons', module)
             v-for="([name, icon]) in icons"
             style="padding: 16px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;"
           >
-          <HdIcon
+          <DDIcon
             :src="icon"
           />
           <p style="font-size: 14px">{{ name }}</p>
@@ -48,7 +48,7 @@ storiesOf('Assets/Icons', module)
   }))
   .add('Big icons', () => ({
     components: {
-      HdIcon,
+      DDIcon,
       VueCodeHighlight,
     },
     data() {
@@ -66,7 +66,7 @@ storiesOf('Assets/Icons', module)
             v-for="([name, icon]) in icons"
             style="padding: 16px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;"
           >
-          <HdIcon
+          <DDIcon
             :src="icon"
           />
           <p style="font-size: 14px">{{ name }}</p>
@@ -77,7 +77,7 @@ storiesOf('Assets/Icons', module)
   }))
   .add('Bicolor icons', () => ({
     components: {
-      HdIcon,
+      DDIcon,
       VueCodeHighlight,
     },
     data() {
@@ -95,7 +95,7 @@ storiesOf('Assets/Icons', module)
             v-for="([name, icon]) in icons"
             style="padding: 16px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;"
           >
-          <HdIcon
+          <DDIcon
             :src="icon"
           />
           <p style="font-size: 14px">{{ name }}</p>
