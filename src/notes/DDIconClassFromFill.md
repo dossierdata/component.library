@@ -5,7 +5,7 @@ Please note that the the icon's paths originally have the fill `#1C3553` with cl
 ### The component usage:
 
 ```html
-<HdIcon
+<DDIcon
   :src="importedIcon"
   :class-from-fill="{
     '#1895FF': 'secondary-color',

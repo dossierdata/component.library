@@ -56,7 +56,7 @@ jobs:
                   "elements": [
                     {
                       "type": "plain_text",
-                      "text": "Homeday Blocks"
+                      "text": "DossierData Component Library"
                     }
                   ]
                 }

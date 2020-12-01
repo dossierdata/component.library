@@ -3,29 +3,38 @@
     <h1 class="welcome__title">dossierdata-component-library</h1>
     <p class="welcome__paragraph">A Vue component library built by Homeday's frontend team.</p>
 
-    <h3 class="welcome__subtitle">Start using the library in 2 quick steps</h3>
+    <h3 class="welcome__subtitle">Start using the library in 2 steps</h3>
     <p class="welcome__paragraph">
       1- Install the library:
       <vue-code-highlight class="welcome__code">{{
-        "npm install homeday-de/dossierdata-component-library --save"
+        "npm install dossierdata-component-library --save"
       }}</vue-code-highlight>
       2- Consume the components
       <vue-code-highlight class="welcome__code">{{
-        "import { HdGallery } from 'dossierdata-component-library';"
+        "import { DDButton } from 'dossierdata-component-library';"
       }}</vue-code-highlight>
     </p>
 
-    <h3 class="welcome__subtitle">Older browsers support</h3>
+    <h3 class="welcome__subtitle">Start local development in 3 steps</h3>
     <p class="welcome__paragraph">
-      As we are serving "raw" components, and babel-loader doesn't transpile the dependencies by default,
-      you might want to ask it to do so.<br />
-      Our recommended solution is to use
-      <a class="link" href="https://cli.vuejs.org/config/#transpiledependencies" target="_blank">transpileDependencies</a>
-      in the Vue config file:
+      1- Clone the repository in your workspace:
       <vue-code-highlight class="welcome__code">{{
-        "transpileDependencies: ['dossierdata-component-library', 'vue-zoomer'],"
+        "cd ~/workspace\n" +
+        "git clone git@github.com:dossierdata/component.library.git"
       }}</vue-code-highlight>
+      2- Install dependencies and provide as a link via npm:
+      <vue-code-highlight class="welcome__code">{{
+          "cd ~/workspace/component.library\n" +
+          "npm install\n" +
+          "npm link"
+        }}</vue-code-highlight>
+      3- Use the link in your project:
+      <vue-code-highlight class="welcome__code">{{
+          "cd ~/workspace/my.project\n" +
+          "npm link component library"
+        }}</vue-code-highlight>
     </p>
+
     <h3 class="welcome__subtitle">How to use our storybook?</h3>
     <h4>You don't have to check all the tabs to see if something is available. We use some suffixes in the story's title:</h4>
     <p class="welcome__paragraph">
@@ -36,7 +45,7 @@
     </p>
     <h3 class="welcome__subtitle">Contributing :)</h3>
     <p class="welcome__paragraph">
-      Check out our <a class="link" href="https://github.com/homeday-de/dossierdata-component-library" target="_blank">Github repository</a> for more details.</p>
+      Check out our <a class="link" href="https://github.com/dossierdata/component.library" target="_blank">Github repository</a> for more details.</p>
   </div>
 </template>
 
