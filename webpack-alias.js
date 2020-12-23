@@ -2,11 +2,11 @@ const path = require('path');
 
 // Generates a webpack alias object
 // NOTE: The paths are generated from the point of view of this file
-module.exports = ({custom = {}} = {}) => {
+module.exports = ({ custom = {} } = {}) => {
   const startAlias = {
     'dossierdata-component-library': '.',
   };
-  const mergedAlias = {...startAlias, ...custom};
+  const mergedAlias = { ...startAlias, ...custom };
 
   return Object.keys(mergedAlias).reduce((alias, currentKey) => {
     const calculatedPath = path.join(
@@ -14,6 +14,6 @@ module.exports = ({custom = {}} = {}) => {
       mergedAlias[currentKey],
     );
 
-    return {...alias, [currentKey]: calculatedPath};
+    return { ...alias, [currentKey]: calculatedPath };
   }, {});
 };
