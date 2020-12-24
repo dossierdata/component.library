@@ -1,7 +1,7 @@
 import _merge from 'lodash/merge';
 import { wrapperFactoryBuilder } from 'tests/unit/helpers';
 import InlineSvg from 'vue-inline-svg';
-import DDIcon from '@/components/basic/DDIcon.vue';
+import DDIcon from '@/components/basic/DDIconOld.vue';
 
 const ICON_CONTENT = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="222 126 53 53" width="50" height="50">
   <path class="color1" d="M272.48 137.62L258.61 150.5L244.75 141.58L254.65 126.73L272.48 137.62Z" fill="#1895FF"/>
