@@ -1,131 +1,68 @@
 <template>
-  <button
-    v-on="$listeners"
-    :class="computedClasses"
-  >
-    <span
-      v-if="iconSrc"
-      class="btn__icon"
-    >
-      <DDIcon
-        :src="iconSrc"
-        width="100%"
-        height="100%"
-      />
+  <a-button :type="type" :disabled="disabled" @click="buttonClick">
+    <span v-if="iconComp" class="icon">
+      <component :is="iconComp" />
     </span>
-    <span
-      ref="content"
-      class="btn__content"
-    >
-      <slot/>
-    </span>
-  </button>
+    <slot />
+  </a-button>
 </template>
 
 <script>
-import DDIcon from 'dossierdata-component-library/src/components/basic/DDIcon.vue';
-
-export const TYPES = {
-  PRIMARY: 'primary',
-  SECONDARY: 'secondary',
-  TERTIARY: 'tertiary',
-  FLAT: 'flat',
-  GHOST: 'ghost',
-};
+import Vue from 'vue';
 
 export default {
   name: 'DDButton',
   components: {
-    DDIcon,
   },
   props: {
-    modifier: {
+    type: {
       type: String,
-      default: TYPES.PRIMARY,
-      validator(value) {
-        const allTypes = Object.values(TYPES);
-
-        return allTypes.includes(value);
-      },
-    },
-    isInDarkBackground: {
-      type: Boolean,
-      default: false,
-    },
-    iconSrc: {
-      type: String,
+      required: false,
       default: '',
     },
-  },
-  data() {
-    return {
-      contentObserver: null,
-      isIconButton: false,
-    };
-  },
-  computed: {
-    computedClasses() {
-      const baseClass = 'btn';
-      return [
-        baseClass,
-        {
-          [`${baseClass}--${this.modifier}`]: this.modifier,
-          [`${baseClass}--dark-background`]: this.isInDarkBackground,
-          [`${baseClass}--icon-button`]: this.isIconButton,
-        },
-      ];
+    icon: {
+      type: String,
+      required: false,
+      default: null,
+    },
+    disabled: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
-  mounted() {
-    // We set an observer to watch the content of the button
-    // to know when to switch to the icon button mode
-    this.contentObserver = new MutationObserver(() => {
-      this.detectIconButton();
-    });
-    this.contentObserver.observe(this.$refs.content, {
-      characterData: true,
-      subtree: true,
-    });
-
-    this.detectIconButton();
-  },
-  beforeDestroy() {
-    this.contentObserver.disconnect();
+  computed: {
+    iconComp() {
+      if (!this.icon) {
+        return null;
+      }
+      return Vue.component(`mdi-${this.icon}`);
+    },
   },
   methods: {
-    detectIconButton() {
-      // It's an icon button if the content element has no text
-      this.isIconButton = !this.$refs.content.textContent.trim();
+    buttonClick() {
+      this.$emit('click');
     },
   },
 };
 </script>
 
-<style lang="scss">
-@import 'dossierdata-component-library/src/styles/_variables.scss';
-@import 'dossierdata-component-library/src/styles/buttons.scss';
-
-.btn {
-  $root: &;
-
-  &--icon-button {
-    padding: $inset-s;
-  }
-
-  &__icon {
-    width: 24px;
-    height: 24px;
-    margin-right: $inline-xs;
-
-    #{$root}--icon-button & {
-      width: 28px;
-      height: 28px;
-      margin-right: 0;
-    }
-
-    path {
-      fill: currentColor;
-    }
-  }
+<style scoped>
+.icon {
+  padding-right: 5px;
+}
+.material-design-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+.material-design-icon > .material-design-icon__svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  position: absolute;
+  bottom: -0.125em;
 }
 </style>

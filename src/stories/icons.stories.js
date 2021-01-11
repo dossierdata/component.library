@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue';
 import { component as VueCodeHighlight } from 'vue-code-highlight';
-import DDIcon from 'dossierdata-component-library/src/components/basic/DDIcon.vue';
+import DDIcon from 'dossierdata-component-library/src/components/basic/DDIconOld.vue';
 import * as smallIcons from 'dossierdata-component-library/src/assets/small-icons';
 import * as bigIcons from 'dossierdata-component-library/src/assets/big-icons';
 import * as bicolorIcons from 'dossierdata-component-library/src/assets/bicolor-icons';
